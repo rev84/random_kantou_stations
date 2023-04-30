@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width">
+<title>RandomTokyoStation</title>
+<link rel="shortcut icon" href="favicon.ico">
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-2.2.1.min.js" integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00=" crossorigin="anonymous"></script>
+
+<!-- jQuery Plugin -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.1/jquery.datetimepicker.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.1/jquery.datetimepicker.min.js"></script>
+
+
+<!-- Bootstrap -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+<!-- mine -->
+<script src="./js/stations.js"></script>
+<script src="./js/index.js"></script>
+<link rel="stylesheet" type="text/css" href="./css/index.css">
+
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="./">RandomTokyoStation</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <!-- 左側 -->
+      <!--
+      <ul class="nav navbar-nav">
+        <li><a href="#">リンク</a></li>
+      </ul>
+      -->
+
+      <!-- 右側 -->
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="https://github.com/rev84/RandomTokyoStation" target="_blank">GitHub</a></li>
+        <li><a href="https://twitter.com/rev84" target="_blank">developed by @rev84</a></li>
+        <li><a id="tweet"></a></li>
+        <!--
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ドロップダウン<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">ドロップダウンメニュー</a></li>
+          </ul>
+        </li>
+        -->
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<center>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- RandomTokyoStation -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-8523455066091917"
+     data-ad-slot="9179008690"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<div id="field"></div>
+
+<button id="start">スタート</button>
+
+</center>
+
+<div id="side_bar">
+  <table class="table table-bordered">
+    <tr>
+      <th>
+        横×縦
+      </th>
+      <td>
+        <input type="text" id="width" value="5">
+        ×
+        <input type="text" id="height" value="5">
+      </td>
+    </tr>
+    <tr>
+      <th>効果音</th>
+      <td><input type="checkbox" id="se">効果音を鳴らす</td>
+    </tr>
+    <tr>
+      <th>所属駅数</th>
+      <td><button id="show_num">マス目に表示</button></td>
+    </tr>
+    <tr>
+      <th>速度</th>
+      <td><input type="text" id="ms" value="100">ms/切替</td>
+    </tr>
+  </table>
+</div>
+<div id="side_bar_button">
+    <button id="side_bar_hide">
+        <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
+    </button>
+</div>
+</body>
+</html>
